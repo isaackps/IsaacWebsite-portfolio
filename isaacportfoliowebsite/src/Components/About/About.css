@@ -1,0 +1,43 @@
+.AboutBG {
+  background-color: white;
+  color: black;
+  height: 620px;
+  text-align: center;
+}
+
+.AboutTitle {
+  padding-top: 100px;
+  margin: 0;
+  font-size: 40px;
+}
+
+.AboutContent {
+  padding-top: 20px;
+  padding-left: 12%;
+  padding-right: 12%;
+  font-size: 23px;
+  line-height: 180%;
+  letter-spacing: 0.1em;
+}
+
+@media only screen and (max-width: 1100px) {
+  .AboutContent {
+    font-size: 20px;
+    line-height: 180%;
+    letter-spacing: 0.1em;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .AboutContent {
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 0.1em;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .AboutContent {
+    font-size: 13px;
+    line-height: 180%;
+    letter-spacing: 0.1em;
+  }
+}

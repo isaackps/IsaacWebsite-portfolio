@@ -1,0 +1,24 @@
+.App-logo {
+  height: 40px;
+  top: 60px;
+  left: 80px;
+  position: absolute;
+}
+
+.App-header {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  padding: 10px;
+  color: white;
+}
+
+body, header, footer, html, h2, h3, h4, h5, h6, p, a, div, span {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-weight: 700;
+}
