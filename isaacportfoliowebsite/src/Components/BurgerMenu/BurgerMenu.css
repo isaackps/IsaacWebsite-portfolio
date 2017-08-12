@@ -9,7 +9,7 @@
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #525252;
+  background: #444444;
 }
 
 /* Position and sizing of clickable cross button */
@@ -25,14 +25,14 @@
 
 /* General sidebar styles */
 .bm-menu {
-  background: #525252;
+  background: #444444;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: #525252;
+  fill: #444444;
 }
 
 /* Wrapper for item list */

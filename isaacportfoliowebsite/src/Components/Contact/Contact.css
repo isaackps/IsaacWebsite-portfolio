@@ -1,0 +1,85 @@
+.ContactBG {
+  height: 500px;
+}
+.contactTitle {
+  padding-top: 100px;
+  margin: 0;
+  font-size: 40px;
+  text-align: center;
+}
+.contactContent {
+  position: relative;
+  height:300px;
+  width: 745px;
+  margin: auto;
+}
+.contactLeft {
+  position:absolute;
+  padding: 10px;
+  border: 1px solid #e3e3e3;
+  border-radius: 2px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 0px 10px #888888;
+  transition: all 0.3s;
+  margin-top: 40px;
+}
+.contactLeft:hover {
+  margin-top: 20px;
+  cursor: pointer;
+}
+.contactRight {
+  position: absolute;
+  padding: 10px;
+  border: 1px solid #e3e3e3;
+  border-radius: 2px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 0px 10px #888888;
+  transition: all 0.3s;
+  right: 0;
+  margin-top: 40px;
+}
+.contactRight:hover {
+  margin-top: 20px;
+  cursor: pointer;
+}
+.contactMid {
+  position: absolute;
+  padding: 10px;
+  border: 1px solid #e3e3e3;
+  border-radius: 2px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 0px 10px #888888;
+  transition: all 0.3s;
+  right: 35%;
+  margin-top: 40px;
+}
+.contactMid:hover {
+  margin-top: 20px;
+  cursor:pointer;
+}
+.ContactDetail{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 70px;
+  color: black;
+}
+.contactSubTitle {
+  text-align: center;
+  margin-top: 0;
+}
+.Logo {
+  height: 100px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.ContactDetail2{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0px;
+  color: black;
+}

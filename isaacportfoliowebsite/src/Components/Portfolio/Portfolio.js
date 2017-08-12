@@ -15,7 +15,7 @@ export default class Portfolio extends React.Component {
     return (
       <div className="Portfolio" id="Portfolio">
         <h1 className="PortfolioTitle">Portfolio</h1>
-        <h3 className="PortfolioSubTitle">Web Development</h3>
+        <h3 className="PortfolioSubTitle">Web Development Projects</h3>
 
         <div className="PortfolioItem1">
           <a href="https://52.76.125.37/" target= "_blank" rel="noreferrer noopener" className="link">

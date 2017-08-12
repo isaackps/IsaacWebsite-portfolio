@@ -13,7 +13,9 @@ export default class Header extends React.Component {
     return (
       <div>
         <div className="App-header" id="top">
-          <img src={logo} className="App-logo animated bounceIn" alt="logo" />
+          <a href="#Top">
+            <img src={logo} className="App-logo animated bounceIn" alt="logo" />
+          </a>
         </div>
       </div>
     );

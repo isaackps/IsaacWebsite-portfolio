@@ -12,9 +12,11 @@ export default class VideoBG extends React.Component {
 
   render() {
     return (
+      <div>
       <video id="backgroundVideo" loop autoPlay muted>
         <source src={this.state.videoURL} type="video/mp4" />
       </video>
+    </div>
     );
   }
 }

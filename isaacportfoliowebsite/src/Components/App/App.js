@@ -5,6 +5,8 @@ import Menu from '../BurgerMenu/BurgerMenu';
 import Video from '../VideoBG/VideoBG';
 import About from '../About/About';
 import Portfolio from '../Portfolio/Portfolio';
+import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
 
 import './App.css';
 
@@ -19,6 +21,8 @@ class App extends Component {
             <Video/>
             <About/>
             <Portfolio/>
+            <Contact/>
+            <Footer/>
           </main>
         </div>
       </div>

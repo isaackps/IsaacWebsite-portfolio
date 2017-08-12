@@ -20,10 +20,10 @@ export default class BurgerMenu extends React.Component {
   render() {
     return (
       <Menu right isOpen={this.state.isOpen}>
-        <a id="home" className="menu-item" href="#top" onClick={this.onClick}>Home</a>
-        <a id="home" className="menu-item" href="#top" onClick={this.onClick}>About</a>
-        <a id="home" className="menu-item" href="#top" onClick={this.onClick}>Portfolio</a>
-        <a id="home" className="menu-item" href="#top" onClick={this.onClick}>Contact</a>
+        <a id="home" className="menu-item" href="#Top" onClick={this.onClick}>Home</a>
+        <a id="home" className="menu-item" href="#About" onClick={this.onClick}>About</a>
+        <a id="home" className="menu-item" href="#Portfolio" onClick={this.onClick}>Portfolio</a>
+        <a id="home" className="menu-item" href="#Contact" onClick={this.onClick}>Contact</a>
       </Menu>
     );
   }

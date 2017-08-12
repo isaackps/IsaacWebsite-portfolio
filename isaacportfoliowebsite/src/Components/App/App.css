@@ -4,7 +4,13 @@
   left: 80px;
   position: absolute;
 }
-
+::-webkit-scrollbar {
+    display: none;
+}
+.App {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
 .App-header {
   position: fixed;
   top: 0;
