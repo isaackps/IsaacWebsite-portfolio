@@ -12,7 +12,7 @@ export default class Footer extends React.Component {
     return (
       <div className="footerBG">
         <img src={FooterLogo} className='footerLogo'/>
-        <h5 className='footerContent'>Disigned by Isaac Koh, Portfolio 2017</h5>
+        <h5 className='footerContent'>Designed by Isaac Koh, Portfolio 2017</h5>
       </div>);
   }
 }
