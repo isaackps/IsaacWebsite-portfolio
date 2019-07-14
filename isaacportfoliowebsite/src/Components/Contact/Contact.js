@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import githubLogo from '../../github-logo.jpg';
 import linkedinLogo from '../../LinkedIn-Logo.png';
 
@@ -6,10 +6,6 @@ import linkedinLogo from '../../LinkedIn-Logo.png';
 import './Contact.css';
 
 export default class Contact extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div id="Contact" className="ContactBG">
@@ -23,13 +19,13 @@ export default class Contact extends React.Component {
           </a>
           <a href="https://github.com/isaackps" target= "_blank" rel="noreferrer noopener">
             <div className="contactMid">
-              <img src={githubLogo} className="Logo"/>
+              <img src={githubLogo} className="Logo" alt='gitHub logo'/>
               <p className="ContactDetail2">Github</p>
             </div>
           </a>
           <a href="https://www.linkedin.com/in/isaackoh89/" target= "_blank" rel="noreferrer noopener">
             <div className="contactRight">
-              <img src={linkedinLogo} className="Logo"/>
+              <img src={linkedinLogo} className="Logo" alt='linkedIn logo'/>
               <p className="ContactDetail2">LinkedIn</p>
             </div>
           </a>
