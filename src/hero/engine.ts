@@ -78,12 +78,13 @@ export class HeroEngine {
   load() {
     const c = new Image();
     c.decoding = "async";
+    (c as any).fetchPriority = "high";            // LCP image: ahead of the turn frames
     c.onload = () => { this.center = c; this.stats.framesLoaded++; this.paintBackground(); this.drawOnce(); this.onReady?.(); };
     c.src = "frames/center.webp";
   }
 
   framesRequested = false;
-  /** The 64 turn frames are deferred (called after window load, at idle, once the hero is near the viewport).
+  /** The 64 turn frames, requested up front right after the centre frame.
    *  Until each one decodes, pick() falls back to the nearest loaded frame or the centre, so nothing looks different. */
   loadFrames() {
     if (this.reduced || this.framesRequested) return;  // reduced motion: the centre frame is all we ever show
