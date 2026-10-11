@@ -81,8 +81,8 @@ export default function Hero() {
         </p>
         <div className="hero-ctas">
           <a href={PERSON.linkedin} target="_blank" rel="noopener noreferrer" className="btn btn-solid" data-magnetic
-            aria-label="Resume on LinkedIn (opens in a new tab)">
-            Resume <ArrowUpRight size={18} weight="bold" aria-hidden="true" />
+            aria-label="Isaac Koh on LinkedIn (opens in a new tab)">
+            LinkedIn <ArrowUpRight size={18} weight="bold" aria-hidden="true" />
           </a>
           <Link to="/contact" className="btn btn-glass" data-magnetic>Let's talk</Link>
         </div>
