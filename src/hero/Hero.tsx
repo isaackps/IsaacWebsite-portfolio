@@ -27,7 +27,21 @@ export default function Hero() {
     eng.onReady = () => setReady(true);
     const readyFallback = window.setTimeout(() => setReady(true), 1200); // copy never waits on images
     eng.resize();
-    eng.load();
+    eng.load(); // centre frame only (the LCP image)
+
+    // Deferred turn frames: after window load, then at idle, and only once the hero is near the viewport.
+    let near = false, loaded = document.readyState === "complete", idleId = 0, cancelled = false;
+    const ric: (cb: () => void) => number = (window as any).requestIdleCallback
+      ? (cb) => (window as any).requestIdleCallback(cb, { timeout: 2000 })
+      : (cb) => window.setTimeout(cb, 200);
+    const maybeLoadFrames = () => {
+      if (cancelled || reduced || !near || !loaded || eng.framesRequested || idleId) return;
+      idleId = ric(() => { idleId = 0; if (!cancelled) eng.loadFrames(); });
+    };
+    const onWinLoad = () => { loaded = true; maybeLoadFrames(); };
+    if (!loaded) window.addEventListener("load", onWinLoad, { once: true });
+    const nearIo = new IntersectionObserver(([en]) => { if (en.isIntersecting) { near = true; maybeLoadFrames(); } }, { rootMargin: "300px" });
+    nearIo.observe(hero);
 
     const onMove = (e: PointerEvent) => {
       if (e.pointerType === "mouse" || e.pointerType === "pen") {
@@ -57,6 +71,7 @@ export default function Hero() {
     sync();
     (window as any).__hero = eng;
     return () => {
+      cancelled = true; nearIo.disconnect(); window.removeEventListener("load", onWinLoad);
       eng.stop(); io.disconnect(); ro.disconnect(); window.clearTimeout(readyFallback);
       window.removeEventListener("pointermove", onMove);
       document.documentElement.removeEventListener("pointerleave", onLeave);

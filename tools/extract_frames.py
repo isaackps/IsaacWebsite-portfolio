@@ -26,8 +26,13 @@ import numpy as np
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent
-VIDEO = sys.argv[1] if len(sys.argv) > 1 else "/home/box/agent-data/agents/19a3d6e7-de47-43aa-8f4d-b98d1fcace57/attachments/39b80d366c456d25a77da7771c3bdf7f9daaecb2e9652edff71bdf8b09e36314.mp4"
-OUT = ROOT / "public" / "frames"
+import argparse
+_ap = argparse.ArgumentParser(description="Extract the hero's 64 WebP turn frames + center.webp from the source video.")
+_ap.add_argument("video", help="path to the source MP4 (not stored in the repo)")
+_ap.add_argument("--out", default=str(ROOT / "public" / "frames"), help="output folder (default: public/frames)")
+_args = _ap.parse_args()
+VIDEO = _args.video
+OUT = Path(_args.out)
 N_SLOTS = 64
 TOP_PAD = 96          # px of matched background added above the hat
 FEATHER = 72          # px left/right edge feather into the modelled gradient

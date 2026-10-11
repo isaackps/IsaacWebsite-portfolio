@@ -80,8 +80,15 @@ export class HeroEngine {
     c.decoding = "async";
     c.onload = () => { this.center = c; this.stats.framesLoaded++; this.paintBackground(); this.drawOnce(); this.onReady?.(); };
     c.src = "frames/center.webp";
-    if (this.reduced) return;                      // reduced motion: the centre frame is all we ever show
-    // Load the 64 turn frames in an order that fills the circle coarse-to-fine, so tracking works early.
+  }
+
+  framesRequested = false;
+  /** The 64 turn frames are deferred (called after window load, at idle, once the hero is near the viewport).
+   *  Until each one decodes, pick() falls back to the nearest loaded frame or the centre, so nothing looks different. */
+  loadFrames() {
+    if (this.reduced || this.framesRequested) return;  // reduced motion: the centre frame is all we ever show
+    this.framesRequested = true;
+    // Load in an order that fills the circle coarse-to-fine, so tracking works early.
     const order: number[] = [];
     for (let step = 16; step >= 1; step = step / 2) for (let i = 0; i < N; i += step) if (!order.includes(i)) order.push(i);
     order.forEach((i) => {
