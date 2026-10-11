@@ -61,7 +61,7 @@ export default function Home() {
           </article>
           <article className="ledger-row reveal">
             <h3 className="ledger-name ledger-name-sm">Running something</h3>
-            <p className="ledger-text">Back in Singapore, my wife and I co-founded Lim Koh Pi LLP, the business behind My Sister Bakes. I designed, built
+            <p className="ledger-text">Back in Singapore, my partner and I co-founded Lim Koh Pi LLP, the business behind My Sister Bakes. I designed, built
               and maintained its <span className="nowrap">e-commerce</span> site, and also looked after accounts, budgeting and training new staff.</p>
           </article>
           <article className="ledger-row reveal">
