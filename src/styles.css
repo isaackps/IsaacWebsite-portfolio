@@ -108,7 +108,7 @@ main { display: block; outline: none; }
   margin: 0.06em 0 0.14em -0.03em; letter-spacing: -0.005em; padding-bottom: 0.04em;
   text-shadow: 0 12px 42px rgba(8, 16, 26, 0.38), 0 2px 8px rgba(8, 16, 26, 0.22);
 }
-.hero-bio { max-width: 350px; font-size: 1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.9); }
+.hero-bio { max-width: 380px; font-size: 1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.9); }
 .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 .hero-copy > * { opacity: 0; translate: 0 16px; transition: opacity 0.9s var(--ease), translate 0.9s var(--ease); }
 .hero.is-ready .hero-copy > * { opacity: 1; translate: 0 0; }
