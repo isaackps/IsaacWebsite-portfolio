@@ -41,11 +41,11 @@ export default function Home() {
         <h2 id="about-h" className="sr-only">About</h2>
         <p className="statement reveal">
           Right now I lead engineering at <strong>DEX</strong> on TrustVC, TradeTrust and OpenCerts: open frameworks that let
-          anyone check a credential, a trade document or a certificate is genuine.
+          anyone check a credential, a trade document or a certificate if it's genuine.
         </p>
         <dl className="facts reveal">
           <div><dt>Role</dt><dd>Technical Lead</dd></div>
-          <div><dt>Organisation</dt><dd>DEX, a subsidiary of IMDA</dd></div>
+          <div><dt>Organisation</dt><dd>DEX</dd></div>
           <div><dt>Since</dt><dd>April 2026, on secondment from IMDA</dd></div>
         </dl>
       </section>
