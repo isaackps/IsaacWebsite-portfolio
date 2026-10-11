@@ -1,4 +1,4 @@
-# isaackps.com — personal website (v4 redesign)
+# isaackps.com — personal website
 
 Single-page portfolio for Isaac Koh: animated canvas hero, About, Roles, Recent work (TrustVC, TradeTrust, OpenCerts), Standards and Contact.
 
