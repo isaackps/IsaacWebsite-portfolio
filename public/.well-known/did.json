@@ -1,0 +1,27 @@
+{
+  "id": "did:web:isaackps.com",
+  "verificationMethod": [
+    {
+      "type": "Multikey",
+      "id": "did:web:isaackps.com#keys-1",
+      "controller": "did:web:isaackps.com",
+      "publicKeyMultibase": "zDnaebtDAuYsQRE6gvtZDayTUeHPpVxQd6DW2bH19bGkshAdF"
+    }
+  ],
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/multikey/v1"
+  ],
+  "authentication": [
+    "did:web:isaackps.com#keys-1"
+  ],
+  "assertionMethod": [
+    "did:web:isaackps.com#keys-1"
+  ],
+  "capabilityInvocation": [
+    "did:web:isaackps.com#keys-1"
+  ],
+  "capabilityDelegation": [
+    "did:web:isaackps.com#keys-1"
+  ]
+}
